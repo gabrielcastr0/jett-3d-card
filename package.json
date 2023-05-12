@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "cp -R atropos dist/atropos && vite build",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
