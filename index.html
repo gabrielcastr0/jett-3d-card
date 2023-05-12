@@ -1,13 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./atropos/atropos.min.css">
+  <title>Jett 3D Card</title>
+</head>
+
+<body>
+  <div class="atropos container">
+    <div class="cards">
+      <div class="cards-back first">
+        <h1>제트</h1>
+        <h1>제트</h1>
+        <h1>제트</h1>
+        <h1>제트</h1>
+        <h1>제트</h1>
+      </div>
+
+      <div class="card">
+        <div class="atropos-scale">
+          <div class="atropos-rotate">
+            <div class="atropos-inner">
+              <div class="card-info">
+                <header>
+                  <h2 data-atropos-offset="5">Jett</h2>
+                  <span>Jett tem um estilo de luta ágil e evasivo que permite que ela assuma riscos como ninguém. Ela corre em meio a qualquer confronto, cortando os inimigos antes mesmo que eles percebam quem ou o que os atingiu.</span>
+                </header>
+
+                <div class="character">
+                  <img src="./assets/jett.png" alt="Rey Skywalker" data-atropos-offset="4">
+                </div>
+
+                <main>
+                  <div class="info">
+                    <span>Origem</span>
+                    <h4>Coreia do Sul</h4>
+                  </div>
+
+                  <div class="info">
+                    <span>Nome real</span>
+                    <h4>Sunwoo Han</h4>
+                  </div>
+
+                  <div class="info">
+                    <span>Função</span>
+                    <h4>Duelista</h4>
+                  </div>
+
+                  <div class="info">
+                    <span>Habilidades</span>
+                    <h4>Corrente Ascendente <br/> Brisa de Impulso <br/> Erupção das Brumas <br/> Tormenta de Aço</h4>
+                  </div>
+                </main>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards-back second">
+        <h1>제트</h1>
+        <h1>제트</h1>
+        <h1>제트</h1>
+        <h1>제트</h1>
+        <h1>제트</h1>
+      </div>
+    </div>
+  </div>
+
+  <script src="./atropos/atropos.min.js"></script>
+  <script>
+    new Atropos({
+      el: ".atropos"
+    })
+  </script>
+</body>
+
 </html>
