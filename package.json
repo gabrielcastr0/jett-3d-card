@@ -5,10 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "cp -R atropos dist/atropos && vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "netlify-plugin-inline-source": "^1.0.4",
     "vite": "^4.3.2"
   }
 }
